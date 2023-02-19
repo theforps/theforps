@@ -1,4 +1,4 @@
-![](https://readme-typing-svg.demolab.com?font=Comic+Sans+MS&weight=600&size=50&duration=3000&pause=500&color=FA8B00&background=000000&center=true&vCenter=true&multiline=true&width=1080&height=200&lines=Backend+developer+from+Russia.;I+strive+to+be+a+fullstack.;%D0%92ut+all+the+time+%3AD)
+![](https://readme-typing-svg.demolab.com?font=Comic+Sans+MS&weight=600&size=50&duration=3000&pause=500&color=FA8B00&background=000000&center=true&vCenter=true&multiline=true&width=1080&height=210&lines=Backend+developer+from+Russia.;I+strive+to+be+a+fullstack.;%D0%92ut+all+the+time+%3AD)
 
 <img width="100%" src="https://streak-stats.demolab.com?user=theforps&theme=highcontrast&hide_border=true&border_radius=4&mode=weekly&center=true">
 
