@@ -4,95 +4,64 @@
 
 <div align="center">
 
-<!-- Typing SVG with Duck Animation -->
-<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <rect width="600" height="200" fill="#0d1117" rx="10"/>
+<!-- Beautiful Duck with Typing Text -->
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="200" fill="url(#bgGradient)" rx="10"/>
   
-  <!-- Duck Group -->
-  <g id="duck">
-    <ellipse cx="50" cy="150" rx="20" ry="15" fill="#ffd700"/>
-    <circle cx="65" cy="140" r="12" fill="#ffd700"/>
-    <g id="beak">
-      <polygon points="75,140 85,135 85,145" fill="#ff8c00">
-        <animateTransform attributeName="transform" type="translate" additive="sum"
-          values="0,0;0,-8;0,0" dur="0.3s" begin="0.1s" fill="freeze"/>
-        <animateTransform attributeName="transform" type="translate" additive="sum"
-          values="0,0;0,-8;0,0" dur="0.3s" begin="0.4s" fill="freeze"/>
-        <animateTransform attributeName="transform" type="translate" additive="sum"
-          values="0,0;0,-8;0,0" dur="0.3s" begin="0.7s" fill="freeze"/>
-        <animateTransform attributeName="transform" type="translate" additive="sum"
-          values="0,0;0,-8;0,0" dur="0.3s" begin="1s" fill="freeze"/>
-        <animateTransform attributeName="transform" type="translate" additive="sum"
-          values="0,0;0,-8;0,0" dur="0.3s" begin="1.3s" fill="freeze"/>
-        <animateTransform attributeName="transform" type="translate" additive="sum"
-          values="0,0;0,-8;0,0" dur="0.3s" begin="1.6s" fill="freeze"/>
-        <animateTransform attributeName="transform" type="translate" additive="sum"
-          values="0,0;0,-8;0,0" dur="0.3s" begin="1.9s" fill="freeze"/>
-        <animateTransform attributeName="transform" type="translate" additive="sum"
-          values="0,0;0,-8;0,0" dur="0.3s" begin="2.2s" fill="freeze"/>
-      </polygon>
-    </g>
-    <circle cx="70" cy="138" r="2" fill="#000"/>
-    <ellipse cx="45" cy="145" rx="8" ry="12" fill="#ffa500"/>
+  <!-- Duck -->
+  <g transform="translate(50, 50)">
+    <!-- Duck body with shadow -->
+    <ellipse cx="52" cy="102" rx="20" ry="15" fill="#000" opacity="0.3"/>
+    <ellipse cx="50" cy="100" rx="20" ry="15" fill="#ffd700"/>
     
-    <!-- Duck horizontal movement -->
-    <animateTransform attributeName="transform" type="translate"
-      values="0,0;50,0;50,0;80,0;80,0;110,0;110,0;140,0;140,0;170,0;170,0;200,0;200,0;230,0;230,0;260,0"
-      keyTimes="0;0.0625;0.125;0.1875;0.25;0.3125;0.375;0.4375;0.5;0.5625;0.625;0.6875;0.75;0.8125;0.875;0.9375;1"
-      dur="3s" fill="freeze"/>
+    <!-- Duck head -->
+    <circle cx="65" cy="90" r="12" fill="#ffd700"/>
     
-    <!-- Duck runs away -->
-    <animateTransform attributeName="transform" type="translate" additive="sum"
-      values="0,0;340,0" dur="0.8s" begin="3.2s" fill="freeze"/>
+    <!-- Duck beak -->
+    <polygon points="75,90 85,85 85,95" fill="#ff8c00"/>
+    
+    <!-- Duck eye with highlight -->
+    <circle cx="70" cy="88" r="3" fill="#fff" opacity="0.3"/>
+    <circle cx="70" cy="88" r="2" fill="#000"/>
+    <circle cx="71" cy="87" r="0.5" fill="#fff"/>
+    
+    <!-- Duck wing -->
+    <ellipse cx="45" cy="95" rx="8" ry="12" fill="#ffa500"/>
+    
+    <!-- Decorative stars -->
+    <circle cx="30" cy="80" r="2" fill="#58a6ff" opacity="0.5"/>
+    <circle cx="35" cy="75" r="1.5" fill="#58a6ff" opacity="0.3"/>
   </g>
   
-  <!-- Letters -->
-  <text x="100" y="100" font-family="monospace" font-size="40" fill="#58a6ff" opacity="0" id="t">t
-    <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.15s" fill="freeze"/>
-  </text>
-  <text x="130" y="100" font-family="monospace" font-size="40" fill="#58a6ff" opacity="0" id="h">h
-    <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.45s" fill="freeze"/>
-  </text>
-  <text x="160" y="100" font-family="monospace" font-size="40" fill="#58a6ff" opacity="0" id="e">e
-    <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.75s" fill="freeze"/>
-  </text>
-  <text x="190" y="100" font-family="monospace" font-size="40" fill="#58a6ff" opacity="0" id="f">f
-    <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="1.05s" fill="freeze"/>
-  </text>
-  <text x="220" y="100" font-family="monospace" font-size="40" fill="#58a6ff" opacity="0" id="o">o
-    <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="1.35s" fill="freeze"/>
-  </text>
-  <text x="250" y="100" font-family="monospace" font-size="40" fill="#58a6ff" opacity="0" id="r">r
-    <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="1.65s" fill="freeze"/>
-  </text>
-  <text x="280" y="100" font-family="monospace" font-size="40" fill="#58a6ff" opacity="0" id="p">p
-    <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="1.95s" fill="freeze"/>
-  </text>
-  <text x="310" y="100" font-family="monospace" font-size="40" fill="#58a6ff" opacity="0" id="s">s
-    <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="2.25s" fill="freeze"/>
-  </text>
-  
-  <!-- Hide letters -->
-  <animate attributeName="opacity" from="1" to="0" dur="0.3s" begin="4.2s" fill="freeze" xlink:href="#t"/>
-  <animate attributeName="opacity" from="1" to="0" dur="0.3s" begin="4.2s" fill="freeze" xlink:href="#h"/>
-  <animate attributeName="opacity" from="1" to="0" dur="0.3s" begin="4.2s" fill="freeze" xlink:href="#e"/>
-  <animate attributeName="opacity" from="1" to="0" dur="0.3s" begin="4.2s" fill="freeze" xlink:href="#f"/>
-  <animate attributeName="opacity" from="1" to="0" dur="0.3s" begin="4.2s" fill="freeze" xlink:href="#o"/>
-  <animate attributeName="opacity" from="1" to="0" dur="0.3s" begin="4.2s" fill="freeze" xlink:href="#r"/>
-  <animate attributeName="opacity" from="1" to="0" dur="0.3s" begin="4.2s" fill="freeze" xlink:href="#p"/>
-  <animate attributeName="opacity" from="1" to="0" dur="0.3s" begin="4.2s" fill="freeze" xlink:href="#s"/>
-  
-  <!-- Final text -->
-  <text x="300" y="100" font-family="monospace" font-size="50" fill="#58a6ff" text-anchor="middle">
-    <tspan opacity="0">t<animate attributeName="opacity" from="0" to="1" dur="0.12s" begin="4.2s" fill="freeze"/></tspan>
-    <tspan opacity="0">h<animate attributeName="opacity" from="0" to="1" dur="0.12s" begin="4.32s" fill="freeze"/></tspan>
-    <tspan opacity="0">e<animate attributeName="opacity" from="0" to="1" dur="0.12s" begin="4.44s" fill="freeze"/></tspan>
-    <tspan opacity="0">f<animate attributeName="opacity" from="0" to="1" dur="0.12s" begin="4.56s" fill="freeze"/></tspan>
-    <tspan opacity="0">o<animate attributeName="opacity" from="0" to="1" dur="0.12s" begin="4.68s" fill="freeze"/></tspan>
-    <tspan opacity="0">r<animate attributeName="opacity" from="0" to="1" dur="0.12s" begin="4.8s" fill="freeze"/></tspan>
-    <tspan opacity="0">p<animate attributeName="opacity" from="0" to="1" dur="0.12s" begin="4.92s" fill="freeze"/></tspan>
-    <tspan opacity="0">s<animate attributeName="opacity" from="0" to="1" dur="0.12s" begin="5.04s" fill="freeze"/></tspan>
-  </text>
+  <!-- Text with glow effect -->
+  <text x="300" y="120" font-family="monospace" font-size="40" fill="#58a6ff" text-anchor="middle" font-weight="bold">theforps</text>
 </svg>
 
+</div>
+
+<!-- Popular typing SVG API that works on GitHub -->
+<div align="center">
+  
+  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=theforps)
+  
+</div>
+
+<div align="center">
+  
+  ### 🦆 **theforps** 🦆
+  
+  ```
+   🦆
+  (o>
+  /||\
+   /\ 
+  ```
+  
 </div>
