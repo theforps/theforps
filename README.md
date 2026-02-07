@@ -9,7 +9,7 @@
   <!-- Background -->
   <rect width="600" height="200" fill="#0d1117" rx="10"/>
   
-  <!-- Duck Group -->
+  <!-- Duck Group - all parts move together -->
   <g id="duck">
     <!-- Duck body -->
     <ellipse cx="50" cy="150" rx="20" ry="15" fill="#ffd700"/>
@@ -20,78 +20,78 @@
     <!-- Duck beak with pecking animation -->
     <g id="beak">
       <polygon points="75,140 85,135 85,145" fill="#ff8c00">
-        <!-- Pecking animations -->
+        <!-- Pecking animations - move up and down -->
         <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
+          additive="sum"
           values="0,0; 0,-8; 0,0"
           dur="0.3s"
           begin="0.1s"
-          repeatCount="1"
           fill="freeze"/>
         <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
+          additive="sum"
           values="0,0; 0,-8; 0,0"
           dur="0.3s"
           begin="0.4s"
-          repeatCount="1"
           fill="freeze"/>
         <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
+          additive="sum"
           values="0,0; 0,-8; 0,0"
           dur="0.3s"
           begin="0.7s"
-          repeatCount="1"
           fill="freeze"/>
         <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
+          additive="sum"
           values="0,0; 0,-8; 0,0"
           dur="0.3s"
           begin="1s"
-          repeatCount="1"
           fill="freeze"/>
         <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
+          additive="sum"
           values="0,0; 0,-8; 0,0"
           dur="0.3s"
           begin="1.3s"
-          repeatCount="1"
           fill="freeze"/>
         <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
+          additive="sum"
           values="0,0; 0,-8; 0,0"
           dur="0.3s"
           begin="1.6s"
-          repeatCount="1"
           fill="freeze"/>
         <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
+          additive="sum"
           values="0,0; 0,-8; 0,0"
           dur="0.3s"
           begin="1.9s"
-          repeatCount="1"
           fill="freeze"/>
         <animateTransform
           attributeName="transform"
           attributeType="XML"
           type="translate"
+          additive="sum"
           values="0,0; 0,-8; 0,0"
           dur="0.3s"
           begin="2.2s"
-          repeatCount="1"
           fill="freeze"/>
       </polygon>
     </g>
@@ -102,7 +102,7 @@
     <!-- Duck wing -->
     <ellipse cx="45" cy="145" rx="8" ry="12" fill="#ffa500"/>
     
-    <!-- Duck movement - moves to each letter position with stops -->
+    <!-- Duck movement - moves horizontally to each letter -->
     <animateTransform
       attributeName="transform"
       attributeType="XML"
@@ -110,16 +110,15 @@
       values="0,0; 50,0; 50,0; 80,0; 80,0; 110,0; 110,0; 140,0; 140,0; 170,0; 170,0; 200,0; 200,0; 230,0; 230,0; 260,0"
       keyTimes="0; 0.0625; 0.125; 0.1875; 0.25; 0.3125; 0.375; 0.4375; 0.5; 0.5625; 0.625; 0.6875; 0.75; 0.8125; 0.875; 0.9375; 1"
       dur="3s"
-      repeatCount="1"
       fill="freeze"/>
     
-    <!-- Duck runs away -->
+    <!-- Duck runs away after pecking all letters -->
     <animateTransform
       attributeName="transform"
       attributeType="XML"
       type="translate"
       additive="sum"
-      values="260,0; 600,0"
+      values="0,0; 340,0"
       dur="0.8s"
       begin="3.2s"
       fill="freeze"/>
