@@ -31,7 +31,7 @@
 
 <div align="center">
 
-![theforps's GitHub stats](https://github-readme-stats.vercel.app/api?username=theforps&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=ffd700&text_color=c9d1d9&count_private=true)
+![theforps's GitHub stats](https://github-readme-stats.vercel.app/api?username=theforps&hide=contribs,prs)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=theforps&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9)
 
