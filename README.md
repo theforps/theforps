@@ -27,20 +27,6 @@
 
 ---
 
-## 📊 GitHub Profile
-
-<div align="center">
-
-![theforps's GitHub stats](https://github-readme-stats.vercel.app/api?username=theforps&hide=contribs,prs)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=theforps&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9)
-
-![GitHub Streak](https://github-readme-streak-stats.demolab.com/?user=theforps&theme=dark&hide_border=true&background=0d1117&ring=58a6ff&fire=ffd700&currStreakLabel=58a6ff&sideNums=58a6ff&dates=c9d1d9)
-
-</div>
-
----
-
 ## 🛠️ Tech Stack
 
 <div align="center">
@@ -76,10 +62,8 @@
 
 <div align="center">
 
-## 🦆 Made by **theforps** 🦆
+## Made by **theforps**
 
 **Quack! 🦆**
-
-[⬆ Back to Top](#-theforps-)
 
 </div>
